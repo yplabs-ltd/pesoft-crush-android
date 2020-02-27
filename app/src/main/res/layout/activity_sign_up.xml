@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/login_ico_bird" />
+
+    <LinearLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ProfileFieldTitleText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:text="@string/email_info" />
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            style="@style/ProfileFieldValueText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:inputType="textEmailAddress"
+            tools:text="큐니" />
+
+        <TextView
+            style="@style/ProfileFieldTitleText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            style="@style/ProfileFieldValueText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:background="@drawable/grey_underline"
+            android:inputType="textPassword"
+            tools:text="큐니" />
+
+        <TextView
+            style="@style/ProfileFieldTitleText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:text="@string/password_confirm" />
+
+        <EditText
+            android:id="@+id/password_confirm_edit_text"
+            style="@style/ProfileFieldValueText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:background="@drawable/grey_underline"
+            android:inputType="textPassword"
+            tools:text="큐니" />
+
+        <TextView
+            style="@style/ProfileFieldTitleText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:text="@string/gender" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/male_text"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/grey_underline"
+                android:gravity="center"
+                android:text="@string/male"
+                android:textColor="@color/dimmed_text_color" />
+
+            <TextView
+                android:id="@+id/female_text"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/grey_underline"
+                android:gravity="center"
+                android:text="@string/female"
+                android:textColor="@color/dimmed_text_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sign_up_button"
+        android:layout_below="@+id/text_layout"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원가입과 동시에 "
+                android:textColor="@color/main_text_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/service_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_text_underline"
+                android:text="@string/service_rule"
+                android:textColor="@color/main_text_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="과"
+                android:textColor="@color/main_text_color"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/private_info_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_text_underline"
+                android:text="@string/private_rule"
+                android:textColor="@color/main_text_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="에 동의하시게 됩니다"
+                android:textColor="@color/main_text_color"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_up_button"
+        android:layout_width="226dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/login_redrounded"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

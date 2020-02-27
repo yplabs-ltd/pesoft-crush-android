@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/id_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#726763"
+        tools:text="다음매칭 12:11"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/line_grey_color"
+        />
+
+    <View
+        android:id="@+id/vertical_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_text_title"
+        android:layout_centerHorizontal="true"
+        android:background="@color/main_grey_color"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_text_title"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <include layout="@layout/incloud_empty_view" />
+
+    <Button
+        android:id="@+id/more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="44dp"
+        android:background="@drawable/bg_btn_rect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:text="@string/more_card"
+        />
+
+</RelativeLayout>

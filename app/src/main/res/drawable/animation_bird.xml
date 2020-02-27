@@ -1,0 +1,51 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/login_ani_bird01"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird02"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird03"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird04"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird05"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird06"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird07"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird08"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird09"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird10"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird11"
+        android:duration="30" />
+
+    <item
+        android:drawable="@drawable/login_ani_bird12"
+        android:duration="30" />
+
+</animation-list>

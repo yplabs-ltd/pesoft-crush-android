@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#726763"
+        android:text="익명으로 편하게 서로의 이야기를 나눠보세요"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/line_grey_color"
+        />
+
+    <LinearLayout
+        android:id="@+id/id_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        >
+
+        <FrameLayout
+            android:layout_width="221dp"
+            android:layout_height="221dp"
+            android:layout_gravity="center_horizontal">
+
+            <net.pesofts.crush.widget.BounceBgView
+                xmlns:bv="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/id_bg_bounce"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                bv:bounce_color="@color/main_grey_color"
+                bv:start_width="40dp"
+                />
+
+            <ImageView
+                android:id="@+id/id_btn_new_story_empty"
+                android:layout_width="91.5dp"
+                android:layout_height="91.5dp"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ico_story"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#726763"
+            android:text="사람들의 이야기를 찾고 있습니다\n먼저 이야기를 시작해 보시는건 어떠세요?"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <FrameLayout
+            android:layout_width="261dp"
+            android:layout_height="261dp"
+            >
+
+            <net.pesofts.crush.widget.CircularNetworkImageView
+                android:id="@+id/id_img_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                />
+
+            <net.pesofts.crush.widget.VoicePlayView
+                xmlns:tint="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/id_btn_voice_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/ico_play"
+                android:background="@color/alpha_0"
+                />
+
+            <ImageView
+                android:id="@+id/id_btn_report"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/btn_voicereport"
+                android:layout_gravity="right"
+                android:layout_marginTop="13.5dp"
+                android:layout_marginRight="14.5dp"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/id_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:textSize="15sp"
+            android:textColor="@color/main_text_color"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            
+            <Button
+                android:id="@+id/id_btn_pass"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:background="@color/alpha_0"
+                android:drawableTop="@drawable/btn_pass"
+                android:drawablePadding="7dp"
+                android:textSize="15sp"
+                android:textColor="@color/main_text_color"
+                android:text="건너뛰기"
+                />
+
+            <Button
+                android:id="@+id/id_btn_reply"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="63dp"
+                android:background="@color/alpha_0"
+                android:drawableTop="@drawable/btn_reply"
+                android:drawablePadding="7dp"
+                android:textSize="15sp"
+                android:textColor="@color/main_red_color"
+                android:text="답장하기"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/id_btn_story_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_text_color"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="이야기 보관함"
+                />
+
+            <TextView
+                android:id="@+id/id_text_new"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="55dp"
+                android:background="@drawable/red_solid_circle"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:text="N" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/id_btn_new_story"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_red_color"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="새 이야기 시작"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="story_ex">
+        <item>Ex. 요즘 재미있게 보신 영화 있으신가요?</item>
+        <item>Ex. 읽었던 책 중에 감명받은거 있으신가요?</item>
+        <item>Ex. 친구 생일선물로 뭐가 좋을까요?</item>
+        <item>Ex. 평일에 쉬고 주말에 바쁜분 계신가요?</item>
+        <item>Ex. 집에서 오랜만에 쉬는데 드라마 추천해주세요</item>
+        <item>Ex. 스트레스 받을 때 나만의 해소법 있으신가요?</item>
+        <item>Ex. 어떨때 가장 기분이 좋고 마음이 편하세요?</item>
+        <item>Ex. 탕수육 부먹이신가요 찍먹이신가요?</item>
+        <item>Ex. 주말에 뭐 하면서 시간 보내세요?</item>
+        <item>Ex. 추천해주실 음악 있으신가요?</item>
+    </string-array>
+</resources>

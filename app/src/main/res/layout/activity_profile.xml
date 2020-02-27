@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/selector_detail_btn_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/my_profile"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="큐니" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_grey_color" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirm_button"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/main_text_color"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/status_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/status_text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/line_grey_color" />
+
+            <net.pesofts.crush.widget.CircularNetworkImageView
+                android:id="@+id/profile_image_view1"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_alignTop="@+id/profile_image_view2"
+                android:layout_toLeftOf="@+id/profile_image_view2"
+                android:background="@drawable/grey_border_white_solid_middle_circle"
+                android:scaleType="centerCrop" />
+
+            <net.pesofts.crush.widget.CircularNetworkImageView
+                android:id="@+id/profile_image_view2"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_below="@+id/status_line_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/grey_border_white_solid_middle_circle"
+                android:scaleType="centerCrop" />
+
+            <net.pesofts.crush.widget.CircularNetworkImageView
+                android:id="@+id/profile_image_view3"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_alignTop="@+id/profile_image_view2"
+                android:layout_toRightOf="@id/profile_image_view2"
+                android:background="@drawable/grey_border_white_solid_middle_circle"
+                android:scaleType="centerCrop" />
+
+            <net.pesofts.crush.widget.CircularNetworkImageView
+                android:id="@+id/profile_image_view4"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_alignTop="@+id/profile_image_view5"
+                android:layout_toLeftOf="@+id/profile_image_view5"
+                android:background="@drawable/grey_border_white_solid_middle_circle"
+                android:scaleType="centerCrop" />
+
+            <net.pesofts.crush.widget.CircularNetworkImageView
+                android:id="@+id/profile_image_view5"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_below="@+id/profile_image_view2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="9dp"
+                android:background="@drawable/grey_border_white_solid_middle_circle"
+                android:scaleType="centerCrop" />
+
+            <net.pesofts.crush.widget.CircularNetworkImageView
+                android:id="@+id/profile_image_view6"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_alignTop="@+id/profile_image_view5"
+                android:layout_toRightOf="@id/profile_image_view5"
+                android:background="@drawable/grey_border_white_solid_middle_circle"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image_view5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/ideal" />
+
+                <TextView
+                    android:id="@+id/ideal_text"
+                    style="@style/ProfileFieldValueText"
+                    android:layout_height="wrap_content"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/nickname" />
+
+                <EditText
+                    android:id="@+id/name_text"
+                    style="@style/ProfileFieldValueText"
+                    android:maxLength="10"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/age_text"
+                    style="@style/ProfileFieldValueText"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/region" />
+
+                <TextView
+                    android:id="@+id/region_text"
+                    style="@style/ProfileFieldValueText"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/job" />
+
+                <TextView
+                    android:id="@+id/job_text"
+                    style="@style/ProfileFieldValueText"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/body" />
+
+                <TextView
+                    android:id="@+id/body_text"
+                    style="@style/ProfileFieldValueText"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/height" />
+
+                <TextView
+                    android:id="@+id/height_text"
+                    style="@style/ProfileFieldValueText"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/blood_type" />
+
+                <TextView
+                    android:id="@+id/blood_type_text"
+                    style="@style/ProfileFieldValueText"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/religion" />
+
+                <TextView
+                    android:id="@+id/religion_text"
+                    style="@style/ProfileFieldValueText"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/school" />
+
+                <EditText
+                    android:id="@+id/school_text"
+                    style="@style/ProfileFieldValueText"
+                    android:maxLength="20"
+                    tools:text="큐니" />
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/interest_about" />
+
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/interest_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/add_interest_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/selector_myprofile_btn_addbox" />
+
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/attractive_about" />
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/attractive_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/add_attractive_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/selector_myprofile_btn_addbox" />
+
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <TextView
+                    style="@style/ProfileFieldTitleText"
+                    android:text="@string/favor_about" />
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/favor_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/add_favor_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/selector_myprofile_btn_addbox" />
+
+                </org.apmem.tools.layouts.FlowLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_red_color"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+</RelativeLayout>
+
+

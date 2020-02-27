@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BounceBgView">
+        <attr name="start_width" format="dimension" />
+        <attr name="bounce_color" format="color" />
+    </declare-styleable>
+</resources>

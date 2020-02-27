@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="allow_permission_via_manage_app_permissions">[디바이스 설정 > 앱 정보 > 권한] 에 \'%1$s\' 권한을 설정해 주세요.</string>
+    <string name="need_permission">\'%1$s\' 권한이 필요합니다.</string>
+    <string name="move_to_app_detail_settings">앱 정보 설정</string>
+</resources>

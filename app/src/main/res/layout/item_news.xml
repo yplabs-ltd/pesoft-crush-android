@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp" />
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_image"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <net.pesofts.crush.widget.NewsProfileLayout
+            android:id="@+id/left_profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <net.pesofts.crush.widget.NewsProfileLayout
+            android:id="@+id/center_profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <net.pesofts.crush.widget.NewsProfileLayout
+            android:id="@+id/right_profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_profile_layout"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_layout"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <net.pesofts.crush.widget.NewsProfileLayout
+            android:id="@+id/left_second_profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <net.pesofts.crush.widget.NewsProfileLayout
+            android:id="@+id/center_second_profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <net.pesofts.crush.widget.NewsProfileLayout
+            android:id="@+id/right_second_profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/second_profile_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/line_grey_color" />
+
+    <ImageButton
+        android:id="@+id/list_more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_profile_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/selector_home_btn_listmore"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/footer_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/list_more_button"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="294dp"
+        android:layout_height="288dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#736763"
+            android:textSize="14sp"
+            android:text="@string/buchi_free"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/title_text"
+            android:background="#726763" />
+
+        <LinearLayout
+            android:id="@+id/id_ico_cash_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:drawableTop="@drawable/ico_cash"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#736763"
+                android:text="2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:drawableTop="@drawable/ico_cash"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#736763"
+                android:text="2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:drawableTop="@drawable/ico_cash"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#736763"
+                android:text="2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:drawableTop="@drawable/ico_cash"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#736763"
+                android:text="2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:drawableTop="@drawable/ico_cash"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#736763"
+                android:text="2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ico_cash"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#736763"
+                android:text="10"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id_ico_cash_container"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#736763"
+            android:textSize="14sp"
+            android:text="@string/buchi_free_desc"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/button_layout"
+            android:background="#ecebea" />
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/close"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/divider_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#ecebea" />
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:textColor="@color/main_red_color"
+                android:text="@string/go_to_review"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

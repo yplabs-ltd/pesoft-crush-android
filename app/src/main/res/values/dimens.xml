@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="toolbar_height">45dp</dimen>
+    <dimen name="profile_code_dialog_height_small">50dp</dimen>
+    <dimen name="profile_code_dialog_height_large">315dp</dimen>
+    <dimen name="new_more_list_item_padding">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_9dp">9dp</dimen>
+    <dimen name="like_dialog_height_signout">280dp</dimen>
+    <dimen name="like_dialog_height_large">325dp</dimen>
+    <dimen name="seekbar_bar_height">1dp</dimen>
+</resources>

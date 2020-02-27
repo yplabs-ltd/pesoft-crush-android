@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp"
+        app:layout_widthPercent="15%"
+        tools:text="당신을 좋아해요" />
+
+    <TextView
+        android:id="@+id/desc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/date_text"
+        android:gravity="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp"
+        app:layout_widthPercent="55%"
+        tools:text="당신을 좋아해요" />
+
+    <TextView
+        android:id="@+id/point_diff_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/desc_text"
+        android:gravity="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp"
+        app:layout_widthPercent="15%"
+        tools:text="당신을 좋아해요" />
+
+    <TextView
+        android:id="@+id/adjust_point_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/point_diff_text"
+        android:gravity="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp"
+        app:layout_widthPercent="15%"
+        tools:text="당신을 좋아해요" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_grey_color" />
+
+</android.support.percent.PercentRelativeLayout>

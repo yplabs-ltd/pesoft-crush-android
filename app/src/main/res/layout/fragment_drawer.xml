@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <net.pesofts.crush.widget.CircularNetworkImageView
+        android:id="@+id/profile_image_view"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/grey_border_white_solid_middle_circle"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/main_text_color"
+        android:textSize="13sp"
+        tools:text="큐니" />
+
+    <View
+        android:id="@+id/profile_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/name_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#F1F0F0" />
+
+    <ImageButton
+        android:id="@+id/charge_button"
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/profile_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_sidemenu_btn_charge" />
+
+    <TextView
+        android:id="@+id/buchi_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/charge_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        tools:text="30개" />
+
+    <TextView
+        android:id="@+id/charge_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/buchi_charge"
+        android:textColor="@color/main_red_color"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/charge_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/buchi_charge_info"
+        android:textColor="@color/main_text_color"
+        android:textSize="11sp" />
+
+    <ImageButton
+        android:id="@+id/free_button"
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/charge_info_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_sidemenu_btn_free" />
+
+    <TextView
+        android:id="@+id/free_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/free_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/buchi_free"
+        android:textColor="@color/main_text_color"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/free_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#F1F0F0" />
+
+    <ImageButton
+        android:id="@+id/notice_button"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/notice_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_sidemenu_btn_notice" />
+
+    <TextView
+        android:id="@+id/notice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/qna_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="@string/notice"
+        android:textColor="@color/main_text_color"
+        android:textSize="13sp" />
+
+    <ImageButton
+        android:id="@+id/qna_button"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/qna_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_sidemenu_btn_qna" />
+
+    <TextView
+        android:id="@+id/qna_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setting_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="@string/qna"
+        android:textColor="@color/main_text_color"
+        android:textSize="13sp" />
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/setting_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_sidemenu_btn_setting" />
+
+    <TextView
+        android:id="@+id/setting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/setting"
+        android:textColor="@color/main_text_color"
+        android:textSize="13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sign_up_button"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/login_titlelogo" />
+
+        <ImageView
+            android:id="@+id/bird_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo_image"
+            android:layout_alignRight="@+id/logo_image"
+            android:src="@drawable/animation_bird" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="226dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/login_redrounded"
+        android:text="@string/sign_up_in_3sec"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/main_text_underline"
+        android:text="@string/sign_in"
+        android:textColor="@color/main_text_color"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

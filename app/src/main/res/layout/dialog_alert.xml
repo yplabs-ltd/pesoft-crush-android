@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingTop="26dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp"
+            tools:text="타이틀"
+            />
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/dimmed_text_color"
+            android:textSize="14sp"
+            tools:text="타이틀" />
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_text"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/main_red_color"
+            android:textSize="14sp"
+            tools:text="지금 바로 신고해주세요.
+(신고하면 방은 삭제됩니다)" />
+
+        <EditText
+            android:id="@+id/like_edit_text"
+            android:layout_width="224dp"
+            android:layout_height="157dp"
+            android:layout_below="@+id/alert_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="#F1F0EF"
+            android:gravity="top|left"
+            android:hint="@string/like_message_hint"
+            android:lineSpacingExtra="9dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="@color/dimmed_text_color"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/id_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/like_edit_text"
+            android:background="@color/main_grey_color" />
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_below="@+id/id_line"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/no"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/divider_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_grey_color" />
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/yes"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

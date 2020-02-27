@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">그당반</string>
+    <string name="kakao_app_key">daf084529373bdfb29fd8aa8cb28811f</string>
+    <string name="new_relic_app_key">AAd316c95aa8631488634c7726b701585d3e78cd56</string>
+    <string name="facebook_app_id">1524397737855677</string>
+
+    <string name="update_alert">업데이트 알림</string>
+    <string name="update_alert_desc">업데이트 후 사용가능합니다\n확인을 누르면 스토어로 이동합니다</string>
+
+    <string name="email_info">이메일 주소 (비밀번호 분실시 이용)</string>
+    <string name="password">비밀번호</string>
+    <string name="password_confirm">비밀번호 확인</string>
+    <string name="lose_password">비밀번호를 분실 하셨나요?</string>
+    <string name="gender">성별</string>
+    <string name="male">남자</string>
+    <string name="female">여자</string>
+    <string name="service_rule">이용약관</string>
+    <string name="private_rule">개인정보이용방침</string>
+
+    <string name="empty_email">이메일 주소를 입력해주세요</string>
+    <string name="invalid_email">정상적인 이메일 주소가 아닙니다</string>
+    <string name="empty_password">비밀번호를 입력해주세요</string>
+    <string name="short_password">비밀번호는 4자리 이상입니다</string>
+    <string name="wrong_confirm_password">확인해주신 비밀번호가 일치하지 않습니다</string>
+    <string name="invalid_space">이메일, 비밀번호에는 공백이 포함될 수 없습니다</string>
+    <string name="empty_gender">성별을 선택해 주세요</string>
+
+    <string name="today">TODAY</string>
+    <string name="evaluate">평가</string>
+    <string name="news">소식</string>
+    <string name="more_card">한번 더 소개받기</string>
+    <string name="region_more_card">%s 지역 소개받기</string>
+    <string name="popular_more_card">상위 10% 소개받기</string>
+    <string name="popular_more_card_for_woman">우수회원 소개받기</string>
+    <string name="me">내</string>
+
+    <string name="i_like">당신이 좋아해요</string>
+    <string name="like_me">당신을 좋아해요</string>
+    <string name="i_favor">당신이 호감을 표현했어요</string>
+    <string name="favor_me">당신에게 호감있어요</string>
+    <string name="favor_match">서로 호감을 표현했어요</string>
+    <string name="history">지나간 인연</string>
+    <string name="open_hidden_card">%s님의 프로필을\n보시겠어요?</string>
+
+    <string name="bonus_buchi">출석 보너스 버찌</string>
+    <string name="bonus_buchi_desc">출석 보너스로 버찌가 지급되었습니다</string>
+    <string name="bonus_buchi_alert">%d버찌</string>
+
+    <string name="fill_info">입력해주세요</string>
+    <string name="optional_info">선택사항</string>
+
+    <string name="no">아니오</string>
+    <string name="yes">네</string>
+    <string name="close">닫기</string>
+    <string name="dont_read_again">다시보지않기</string>
+    <string name="confirm">확인</string>
+    <string name="loading">로딩중</string>
+    <string name="like">좋아요</string>
+    <string name="like_again">다시 좋아요</string>
+    <string name="dislike">별로</string>
+    <string name="not_favor">별로</string>
+    <string name="favor">호감</string>
+    <string name="wait_response">상대방의 응답을 기다리고 있습니다</string>
+    <string name="like_check">좋아요 메시지를 확인했습니다</string>
+    <string name="response_like">좋아요 응답하기</string>
+    <string name="send_like_title">상대방에게 좋아요를 보냈어요</string>
+    <string name="send_like_desc">상대방이 좋아요에 응답하면\n대화할 수 있습니다</string>
+    <string name="reply_like_title">상대방의 좋아요에 응답하셨어요</string>
+    <string name="reply_like_desc">대화방이 개설되었으며 상대방과\n대화를 시작할 수 있습니다</string>
+    <string name="like_message_hint">어떤 부분이 마음에 들었는지 메시지를 이 곳에 적어 함께 보내 보세요</string>
+    <string name="move_to_chat">대화하러 가기</string>
+    <string name="I_favor_too">나도 호감</string>
+
+    <string name="sign_up_in_3sec">3초안에 가입하고 바로 만나기</string>
+    <string name="sign_up">지금 바로 만나기</string>
+    <string name="sign_in">회원 로그인</string>
+
+    <string name="popular">우수</string>
+    <string name="normal">일반</string>
+    <string name="notice">공지</string>
+    <string name="qna">문의</string>
+    <string name="setting">설정</string>
+    <string name="buchi_charge">버찌 충전</string>
+    <string name="buchi_charge_info">매일 버찌 무료지급</string>
+    <string name="buchi_free">출석 보너스 버찌</string>
+    <string name="buchi_free_desc">%d버찌가 지급 되었습니다</string>
+
+    <string name="ask_send_like">상대에게 좋아요를 보낼까요?</string>
+    <string name="ask_send_like_again">상대에게 다시 좋아요를 보낼까요?</string>
+    <string name="send_like_info">(상대방이 응답하면 채팅할 수 있어요)</string>
+    <string name="ask_see_more_picture">상대방의 사진을 더 볼까요?</string>
+    <string name="ask_see_more_picture_desc">(TIP. 자신이 올린만큼 무료로 볼 수 있어요)</string>
+
+    <string name="ask_story_reply">상대방에게 더 답장을 보낼까요?\n계속 답장하려면 버찌가 필요합니다</string>
+    <string name="story_reply_info">(최초 1회 %d버찌 필요)</string>
+
+    <string name="buchi_use_history">버찌 사용내역</string>
+    <string name="own_buchi">%d버찌 보유중</string>
+    <string name="need_buchi">%s버찌가 필요합니다\n버찌를 충전하시겠습니까?</string>
+
+    <string name="date">날짜</string>
+    <string name="log_desc">내역</string>
+    <string name="change">변화</string>
+    <string name="accumulate">누적</string>
+
+    <string name="my_profile">내 프로필</string>
+    <string name="change_photo_desc">승인이 완료되었습니다\n사진 변경은 관리자의 심사 후 적용됩니다</string>
+    <string name="fill_profile_desc">프로필을 모두 입력한 후 승인을 요청해주세요</string>
+    <string name="fill_2images_desc">이미지를 2개 이상 등록해주세요</string>
+    <string name="error_upload_image">이미지 업로드에 실패했습니다. 다시 시도해 주세요</string>
+    <string name="review_profile_desc">승인 검토 중입니다</string>
+    <string name="ideal">이런 사람이 좋아요</string>
+    <string name="nickname">닉네임</string>
+    <string name="age">나이</string>
+    <string name="region">지역</string>
+    <string name="job">직업</string>
+    <string name="body">체형</string>
+    <string name="height">키</string>
+    <string name="blood_type">혈액형</string>
+    <string name="religion">종교</string>
+    <string name="school">학교</string>
+    <string name="interest_about">제가 관심있는 것들은요</string>
+    <string name="attractive_about">저는 이런 매력이 있어요</string>
+    <string name="favor_about">저는 이런 분이 좋아요</string>
+    <string name="request_regist_profile">회원가입 승인 요청하기</string>
+    <string name="request_revise_profile">회원정보 변경 요청하기</string>
+    <string name="response_revise_profile">요청이 완료되었습니다.\n검토 후 승인됩니다</string>
+    <string name="review_profile_and_wait_desc">승인 검토 중 입니다\n2시간 이내에 승인되며 완료 후\n사용 가능합니다</string>
+    <string name="photo">사진</string>
+    <string name="photo_album">사진앨범</string>
+    <string name="change_main_photo">메인사진으로 변경</string>
+    <string name="delete">삭제</string>
+    <string name="confirm_without_save">변경사항이 저장되지 않았습니다\n정말 나가시겠습니까?</string>
+
+    <string name="chat_list">채팅 목록</string>
+    <string name="unread">안읽음</string>
+    <string name="lock_chat">대화를 시작해보세요</string>
+    <string name="start_chat">대화가 시작되었습니다</string>
+    <string name="unlock_chat">%s님과 대화를 시작할까요?</string>
+    <string name="unlock_chat_info">(둘 중 한분만 대화방을 열면 대화가 시작됩니다)</string>
+    <string name="like_reply_info">좋아요에 응답하면 채팅창이 열립니다</string>
+    <string name="like_me_count">나에게 좋아요를 보낸 카드</string>
+    <string name="leave_chat">채팅방에서 나가시겠습니까?</string>
+    <string name="empty_chat_list_desc">아직 연결된 인연이 없네요\n상대와 서로\'좋아요\'를 하면\n대화를 나눌 수 있습니다</string>
+    <string name="empty_story_store">이야기 보관함이 비어있습니다\n다른 사람의 이야기에 답장을 하거나\n새 이야기를 시작해 보세요</string>
+
+    <string name="send_email">Send Email</string>
+    <string name="do_qna">문의하기</string>
+    <string name="report">신고하기</string>
+    <string name="email_content_qna">ID : %1$s \n기기 : Android \n* 위의 정보는 문제를 해결하기위해 필요한 정보입니다. 지우지 말아 주세요.\n\n</string>
+    <string name="email_content_report">ID : %1$s \n신고ID : %2$s \n기기 : Android \n * 위의 정보는 문제를 해결하기위해 필요한 정보입니다. 지우지 말아 주세요.\n\n</string>
+
+    <string name="fill_nickname">프로필을 입력해주세요</string>
+    <string name="wait_accept">프로필 심사 중입니다.</string>
+    <string name="popular_more_get_person">상위 10% 이성들을\n한번 더 소개받으시겠어요?</string>
+    <string name="popular_more_get_person_for_woman">우수회원들을\n한번 더 소개받으시겠어요?</string>
+    <string name="more_get_person">오늘의 이성들을\n한번 더 소개받으시겠어요?</string>
+    <string name="needed_buchi_count">%d버찌 필요</string>
+    <string name="fill_profile_info">추가 정보를 입력하시겠어요?</string>
+    <string name="fill_profile_info_description">상대방에게 호감을 표현 하시려면\n추가 회원정보를 입력해야 합니다.</string>
+    <string name="move_fill_profile">입력하러 가기</string>
+    <string name="no_list_news">활동내역이 없으시네요.\nTODAY, 평가 화면을 통해 다양한 이성들에게\n호감을 표현해 보세요</string>
+    <string name="no_profile_desc">%s 기능을 이용하시려면\n추가 회원정보를 입력해야 합니다</string>
+    <string name="wait_evaluate_title">다음 매력평가 이성 수집중</string>
+    <string name="wait_evaluate_desc">\'내 스타일\'로 평가하신 이성들은\n소식탭에서 확인하실 수 있어요</string>
+    <string name="evaluate_desc">상대방은 당신이 호감표시한 걸 알 수 없습니다\n상대방과 당신이 서로 호감을 표현했을 때만 알려줍니다</string>
+    <string name="no_list_today">오늘 단 하루만 만나볼 수 있는\n세명의 이성이 당신을 기다리고 있어요.\n지금 바로 오늘의 인연을 만나보세요</string>
+    <string name="get_today_card">오늘의 인연 소개받기</string>
+
+    <string name="back_button_pressed_finish_notice">뒤로 버튼을 한번 더 누르시면 종료됩니다.</string>
+
+    <string name="fail_purchase_desc">결제에 실패하였습니다.</string>
+
+    <string name="today_matching_setting">매칭 설정(TODAY 소개카드 설정)</string>
+    <string name="age_range">%1$s세 ~ %2$s세</string>
+    <string name="alert">알림</string>
+    <string name="today_evaluate_alert">TODAY 카드/평가 알림</string>
+    <string name="like_alert">좋아요 알림</string>
+    <string name="chat_alert">채팅 알림</string>
+    <string name="account">계정</string>
+    <string name="logout">로그아웃</string>
+    <string name="account_quit">계정탈퇴</string>
+    <string name="account_pause">계정휴면</string>
+    <string name="account_pause_desc">계정휴면 시 더이상 TODAY카드를 받지 않으며\n내 프로필 역시 다른 이성에게 전달되지 않습니다</string>
+    <string name="account_quit_desc">탈퇴하시면 계정정보는 모두 삭제되며\n해당 이메일 계정으로는 당분간 다시 회원가입을 하실 수 없습니다</string>
+    <string name="ask_account_pause">계정휴면을 하시겠습니까?</string>
+    <string name="ask_account_quit">계정탈퇴를 하시겠습니까?</string>
+    <string name="signout_hint">계정휴면을 하시는 이유를 알려주세요</string>
+    <string name="quit_hint">계정탈퇴를 하시는 이유를 알려주세요</string>
+
+    <string name="free_buchi">버찌 무료받기</string>
+    <string name="free_buchi_desc">익명으로 당신의 주소록 친구들에게\n초대메세지를 보내주세요\n(메세지는 무료이며 월 1회만 초대 가능)</string>
+
+    <string name="get_point_invite">%s명 초대하고 30버찌 받기</string>
+    <string name="limit_number_alert">10명까지만 초대가 가능합니다</string>
+    <string name="min_number_alert">10명을 선택하셔야 초대가 가능합니다</string>
+    <string name="success_invite">초대가 완료되었습니다</string>
+    <string name="get_point_after_review">리뷰쓰고 버찌받기</string>
+    <string name="way">방법</string>
+    <string name="product">상품</string>
+    <string name="review_desc"><![CDATA[<font color=#726763>구글플레이에 </font><font color=#F2503B>별5개</font><font color=#726763>와 </font><font color=#F2503B>리뷰</font><font color=#726763>를 작성하면<br/>관리자가 1시간 안에 검토 후 하트를 지급합니다</font>]]></string>
+    <string name="review_detail_desc1"><![CDATA[<font color=#726763>1.참여한 모든 분들에게 </font><font color=#F2503B>버찌 10개</font>]]></string>
+    <string name="review_detail_desc2"><![CDATA[<font color=#726763>2.매주 30명을 추첨하여 </font><font color=#F2503B>버찌 100개</font>]]></string>
+    <string name="go_to_review">리뷰 쓰러 가기</string>
+    <string name="review_info_desc">다음 익명 초대 메시지 발송까지 남은 시간\n%s\n(메세지는 무료이며 월 1회만 초대 가능)</string>
+
+    <string name="error_init">앱을 시작하는데 실패하였습니다. 다시 시도해 주세요</string>
+
+    <string name="cancel">취소</string>
+    <string name="done">완료</string>
+    <string name="story">STORY</string>
+
+</resources>

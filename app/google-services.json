@@ -1,0 +1,53 @@
+{
+  "project_info": {
+    "project_number": "1072769588617",
+    "firebase_url": "https://crush-65f57.firebaseio.com",
+    "project_id": "crush-65f57",
+    "storage_bucket": "crush-65f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072769588617:android:1046192e47d0a519",
+        "android_client_info": {
+          "package_name": "net.pesofts.crush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072769588617-4lvbon0jmg0vjco4d22hl27f7qtefmuu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1072769588617-u0jkni01p1f1skje07875ekm9frqebt7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1072769588617-m3fn1651liom33t7a4q3cbr6gtgo12le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOZaupFM8HQikmLZeEDVkqEFezO4cFocw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-69852662-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

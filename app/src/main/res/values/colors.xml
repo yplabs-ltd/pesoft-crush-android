@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="main_text_color">#726763</color>
+    <color name="dimmed_text_color">#C0BCBB</color>
+    <color name="main_red_color">#F2503B</color>
+    <color name="main_grey_color">#E4E2E1</color>
+    <color name="line_grey_color">#F1F0F0</color>
+
+    <color name="amber">#FFC107</color>
+    <color name="dark_grey">#424242</color>
+    <color name="medium_grey">#9E9E9E</color>
+    <color name="button_grey">#757575</color>
+
+    <color name="image_crop_button_pressed">#404040</color>
+    <color name="image_crop_button_normal">#2B2B2B</color>
+
+    <color name="story_progress_bg">#e3e1e0</color>
+    <color name="story_progress">#f2503b</color>
+
+    <color name="main_red_alpha">#7fF2503B</color>
+
+    <color name="alpha_0">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_alpha_10">#1affffff</color>
+    <color name="white_alpha_15">#26ffffff</color>
+    <color name="white_alpha_20">#33ffffff</color>
+    <color name="white_alpha_30">#4cffffff</color>
+    <color name="white_alpha_40">#66ffffff</color>
+    <color name="white_alpha_50">#7fffffff</color>
+    <color name="white_alpha_53">#80ffffff</color>
+    <color name="white_alpha_60">#99ffffff</color>
+    <color name="white_alpha_70">#b2ffffff</color>
+    <color name="white_alpha_80">#ccffffff</color>
+    <color name="white_alpha_90">#e6ffffff</color>
+    <color name="white_alpha_98">#faffffff</color>
+
+    <color name="black">#000</color>
+    <color name="black_alpha_10">#1a000000</color>
+    <color name="black_alpha_20">#33000000</color>
+    <color name="black_alpha_30">#4D000000</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="black_alpha_45">#72000000</color>
+    <color name="black_alpha_50">#7F000000</color>
+    <color name="black_alpha_85">#D9000000</color>
+</resources>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="ga_sign_up">sign_up</string>
+    <string name="ga_sign_in">sign_in</string>
+    <string name="ga_today">today</string>
+    <string name="ga_story">story</string>
+    <string name="ga_evaluate">evaluate</string>
+    <string name="ga_news">news</string>
+    <string name="ga_news_more">news_more</string>
+    <string name="ga_drawer">drawer</string>
+    <string name="ga_user_detail">user_detail</string>
+    <string name="ga_contact">contact</string>
+    <string name="ga_point_log">point_log</string>
+    <string name="ga_profile">profile</string>
+    <string name="ga_setting">setting</string>
+    <string name="ga_shop">shop</string>
+    <string name="ga_notice">notice</string>
+    <string name="ga_chat_list">chat_list</string>
+    <string name="ga_chat">chat</string>
+    <string name="ga_start">start</string>
+    <string name="ga_story_detail">story_detail</string>
+
+    <!--event-->
+    <string name="ga_good">good</string>
+    <string name="ga_bad">bad</string>
+    <string name="ga_today_more">today_more</string>
+    <string name="ga_today_popular_more">today_popular_more</string>
+    <string name="ga_try">try</string>
+    <string name="ga_today_more_enough_money">today_more_enough_money</string>
+    <string name="ga_confirm">confirm</string>
+    <string name="ga_like">like</string>
+    <string name="ga_like_enough_money">like_enough_money</string>
+    <string name="ga_like_confirm">like_confirm</string>
+    <string name="ga_favor_in_detail">favor_in_detail</string>
+    <string name="ga_accept">accept</string>
+    <string name="ga_reject">reject</string>
+    <string name="ga_photo_more">photo_more</string>
+    <string name="ga_open_hidden_favor">open_hidden_favor</string>
+    <string name="ga_story_reply">story_reply</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/login_ico_bird" />
+
+    <LinearLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ProfileFieldTitleText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:text="@string/email_info" />
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            style="@style/ProfileFieldValueText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:background="@drawable/grey_underline"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/dimmed_text_color"
+            tools:text="큐니" />
+
+        <TextView
+            style="@style/ProfileFieldTitleText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            style="@style/ProfileFieldValueText"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:background="@drawable/grey_underline"
+            android:inputType="textPassword"
+            android:textColor="@color/dimmed_text_color"
+            tools:text="큐니" />
+
+        <TextView
+            android:id="@+id/lose_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/main_text_underline"
+            android:text="@string/lose_password"
+            android:textColor="@color/main_text_color"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_in_button"
+        android:layout_width="226dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/login_redrounded"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#726763"
+        android:text="상대방도 호감을 누르면 매칭됩니다"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/line_grey_color"
+        />
+
+    <RelativeLayout
+        android:id="@+id/evaluate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="18dp"-->
+            <!--android:gravity="center"-->
+            <!--android:lineSpacingExtra="2dp"-->
+            <!--android:text="@string/evaluate_desc"-->
+            <!--android:textColor="@color/main_text_color"-->
+            <!--android:textSize="13sp" />-->
+
+        <net.pesofts.crush.widget.CircularNetworkImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="251dp"
+            android:layout_height="251dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_large_circle"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/profile_more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profile_image_view"
+            android:layout_alignRight="@+id/profile_image_view"
+            android:layout_marginRight="32dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_home_btn_profilemore" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="큐니" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"
+            tools:text="서울,35세" />
+
+
+        <ImageButton
+            android:id="@+id/bad_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_text"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="43dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_home_btn_soso" />
+
+        <ImageButton
+            android:id="@+id/good_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/info_text"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="43dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_home_btn_mystyle" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/incloud_empty_view" />
+
+    <RelativeLayout
+        android:id="@+id/wait_evaluate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="72dp"
+            android:layout_marginTop="72dp">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/circle_progress"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:rotation="-90"
+                custom:donut_finished_color="@color/main_text_color"
+                custom:donut_finished_stroke_width="1dp"
+                custom:donut_text_size="1sp"
+                custom:donut_unfinished_color="@color/main_grey_color"
+                custom:donut_unfinished_stroke_width="1dp" />
+
+            <TextView
+                android:id="@+id/wait_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/white"
+                android:textColor="@color/main_text_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/wait_info_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/wait_info_desc_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:text="@string/wait_evaluate_title"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wait_info_desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:gravity="center"
+            android:lineSpacingExtra="7dp"
+            android:text="@string/wait_evaluate_desc"
+            android:textColor="@color/main_text_color"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</RelativeLayout>

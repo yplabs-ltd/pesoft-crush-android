@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="284dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="284dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="284dp"
+        android:layout_height="1dp"
+        android:background="@color/main_text_color" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_recycler_view"
+        android:layout_width="284dp"
+        android:layout_height="@dimen/profile_code_dialog_height_large"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

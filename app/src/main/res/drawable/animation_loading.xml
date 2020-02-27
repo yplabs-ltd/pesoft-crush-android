@@ -1,0 +1,27 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/loading_ani_01"
+        android:duration="80" />
+
+    <item
+        android:drawable="@drawable/loading_ani_02"
+        android:duration="80" />
+
+    <item
+        android:drawable="@drawable/loading_ani_03"
+        android:duration="80" />
+
+    <item
+        android:drawable="@drawable/loading_ani_04"
+        android:duration="80" />
+
+    <item
+        android:drawable="@drawable/loading_ani_05"
+        android:duration="80" />
+
+    <item
+        android:drawable="@drawable/loading_ani_06"
+        android:duration="80" />
+
+</animation-list>

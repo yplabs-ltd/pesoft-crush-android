@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/selector_detail_btn_close" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="큐니" />
+
+        <ImageButton
+            android:id="@+id/report_button"
+            android:layout_width="37dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/selector_detail_btn_report" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_grey_color" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_layout"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/profile_image_view"
+                    android:layout_width="360dp"
+                    android:layout_height="322dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:transitionName="profile" />
+
+                <RelativeLayout
+                    android:id="@+id/message_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#90726763"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/message_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/message_close_button"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="7dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp" />
+
+                    <ImageButton
+                        android:id="@+id/message_close_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/details_btn_chat_close" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/message_open_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="11dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/details_btn_chat"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/small_profile_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="298dp"
+                    android:orientation="horizontal">
+
+                    <net.pesofts.crush.widget.CircularNetworkImageView
+                        android:id="@+id/profile_image_view1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/grey_border_white_solid_small_circle"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <net.pesofts.crush.widget.CircularNetworkImageView
+                        android:id="@+id/profile_image_view2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/grey_border_white_solid_small_circle"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <net.pesofts.crush.widget.CircularNetworkImageView
+                        android:id="@+id/profile_image_view3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/grey_border_white_solid_small_circle"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <net.pesofts.crush.widget.CircularNetworkImageView
+                        android:id="@+id/profile_image_view4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/grey_border_white_solid_small_circle"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <net.pesofts.crush.widget.CircularNetworkImageView
+                        android:id="@+id/profile_image_view5"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/grey_border_white_solid_small_circle"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <net.pesofts.crush.widget.CircularNetworkImageView
+                        android:id="@+id/profile_image_view6"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/grey_border_white_solid_small_circle"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/detail_ico_quotestart" />
+
+            <TextView
+                android:id="@+id/ideal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="큐니" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/detail_ico_quoteend" />
+
+            <TextView
+                android:id="@+id/age_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <TextView
+                android:id="@+id/region_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <TextView
+                android:id="@+id/job_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <TextView
+                android:id="@+id/height_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <TextView
+                android:id="@+id/body_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <TextView
+                android:id="@+id/religion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <TextView
+                android:id="@+id/blood_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <TextView
+                android:id="@+id/school_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="큐니" />
+
+            <LinearLayout
+                android:id="@+id/extra_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+
+                <View
+                    android:id="@+id/extraInfoLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/line_grey_color" />
+
+                <TextView
+                    android:id="@+id/interest_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="27dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp"
+                    tools:text="큐니" />
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/interest_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/attractive_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="27dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp"
+                    tools:text="큐니" />
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/attractive_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/favor_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="27dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp"
+                    tools:text="큐니" />
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:id="@+id/favor_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dislike_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#726763"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="큐니" />
+
+        <Button
+            android:id="@+id/like_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_red_color"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="큐니" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

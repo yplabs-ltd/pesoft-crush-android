@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="108dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <net.pesofts.crush.widget.CircularNetworkImageView
+        android:id="@+id/profile_image_view"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/grey_border_white_solid_large_circle"
+        android:scaleType="centerCrop"
+        android:transitionName="profile" />
+
+    <TextView
+        android:id="@+id/dday_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/profile_image_view"
+        android:layout_alignRight="@+id/profile_image_view"
+        android:background="@drawable/border_white_solid_circle"
+        android:gravity="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp"
+        tools:text="D-1" />
+
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/main_text_color"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="큐니" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/main_text_color"
+        android:textSize="12sp"
+        tools:text="서울,35세" />
+
+    <TextView
+        android:id="@+id/reply_text"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_below="@+id/info_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:text="진행중" />
+
+</RelativeLayout>

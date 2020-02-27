@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <View
+        android:id="@+id/empty_vertical_line"
+        android:layout_width="3dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/remain_time_view"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/empty_vertical_line"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_white_solid_circle"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_below="@+id/remain_time_view"
+        android:layout_marginTop="8dp">
+
+        <net.pesofts.crush.widget.CircularNetworkImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/grey_border_white_solid_large_circle"
+            android:scaleType="centerCrop"
+            android:transitionName="profile" />
+
+        <TextView
+            android:id="@+id/popular_text"
+            android:layout_width="44dp"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@+id/profile_image_view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-29dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/profile_image_view"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="큐니"
+                android:textColor="@color/main_text_color"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_text"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="12sp"
+                tools:text="서울,35세" />
+
+            <TextView
+                android:id="@+id/info_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_text"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="12sp"
+                tools:text="일반,전문직" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/footer_empty_view"
+        android:layout_width="1dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/profile_layout"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+</RelativeLayout>

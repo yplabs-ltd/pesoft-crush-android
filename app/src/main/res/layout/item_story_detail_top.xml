@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="261dp"
+        android:layout_height="261dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <net.pesofts.crush.widget.VoicePlayView
+            android:id="@+id/id_btn_voice_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@color/alpha_0"
+            />
+
+        <net.pesofts.crush.widget.CircularNetworkImageView
+            android:id="@+id/id_img_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ico_bird_white"
+            />
+
+        <ImageView
+            android:id="@+id/id_btn_report"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/btn_voicereport"
+            android:layout_gravity="right"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginRight="14.5dp"
+            />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/id_left_line"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#e3e1e0"
+        android:layout_gravity="bottom|center_horizontal"
+        />
+</FrameLayout>
